@@ -95,7 +95,7 @@ export function ExecutiveSidebar() {
             }
             className={`w-full flex items-center gap-3 px-4 py-2.5  cursor-pointer
               font-medium transition-colors relative hover:bg-[#edd3fe] hover:text-black
-              ${shouldHighlightParent ? "bg-[#8C23CC] text-white rounded-none" : ""}
+              ${shouldHighlightParent ? "bg-[#8C23CC] text-white rounded-md" : ""}
               ${level > 0 ? "ml-4" : ""}
             `}
           >
@@ -186,7 +186,7 @@ export function ExecutiveSidebar() {
       {/* 🔹 Mobile Floating Menu Button */}
       <button
         onClick={() => setIsSidebarOpen(true)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-white shadow-md hover:bg-slate-100"
+        className="lg:hidden fixed top-9 left-4  z-50 p-2 rounded-md bg-white shadow-md hover:bg-slate-100"
         aria-label="Open Menu"
       >
         <Menu className="w-5 h-5 text-slate-700 cursor-pointer" />

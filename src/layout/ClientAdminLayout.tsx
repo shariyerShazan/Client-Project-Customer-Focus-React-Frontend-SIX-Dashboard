@@ -9,10 +9,11 @@ const ClientAdminLayout = () => {
     <div className="flex min-h-screen bg-[#F8F9FA]">
         <ClientAdminSidebar />
        <main className="flex-1 lg:ml-72 flex flex-col min-h-screen">
-        <div className="p-4 lg:p-6 ml-10 md:ml-0">
-          <Navbar
-            title={"Executive"}
-            subtitle={"Here's your service excellence overview for today" }
+        <div className="p-4 ">
+           <div className='ml-10 md:ml-0'>
+             <Navbar
+            title={"Client Admin Workspace "}
+            subtitle={"Manage organizations, trainers, users, and system-wide operations. " }
             notificationCount={2}
             user={{
               name: "Esther Howard",
@@ -20,6 +21,7 @@ const ClientAdminLayout = () => {
               profilePic: "https://i.pravatar.cc/150?u=esther" 
             }}
           />
+           </div>
 
           <div className="mt-6">
             <Outlet />
