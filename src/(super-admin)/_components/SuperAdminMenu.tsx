@@ -1,7 +1,7 @@
 
 import { BiReceipt } from "react-icons/bi";
 import { FiSettings } from "react-icons/fi";
-import { IoSettingsOutline } from "react-icons/io5";
+// import { IoSettingsOutline } from "react-icons/io5";
 import { LuLayoutTemplate } from "react-icons/lu";
 import { RxDashboard } from "react-icons/rx";
 
@@ -48,7 +48,7 @@ export const SuperAdminMenuItems: SuperMenuItem[] = [
     {
         id:  "super-admin/dashboard/Settings" , 
         label : "Settings" ,
-        icon : <FiSettings />
+        icon : <FiSettings className="w-5 h-5" />
     }
     
   ];
