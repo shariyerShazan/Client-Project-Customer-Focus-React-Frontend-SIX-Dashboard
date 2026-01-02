@@ -14,14 +14,14 @@ interface NavbarT {
 
 export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }) => {
   return (
-    <nav className="w-full  bg-white border border-gray-200 rounded-[20px] px-6 py-4 shadow-sm flex justify-between items-center font-sans">
+    <nav className="w-full  bg-white border border-gray-200 rounded-[20px] px-6 py-3 shadow-sm flex justify-between items-center font-sans">
       
       {/* Left Side: Text Content */}
       <div className="flex flex-col">
         <h1 className="text-2xl font-bold text-gray-900 leading-tight">
           {title}
         </h1>
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm hidden md:block text-gray-500 mt-1">
           {subtitle}
         </p>
       </div>
