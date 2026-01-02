@@ -1,6 +1,6 @@
 
 
-const ManageTemplate = () => {
+const SuperAmdinManageTemplate = () => {
   return (
     <div>
 
@@ -8,4 +8,4 @@ const ManageTemplate = () => {
   )
 }
 
-export default ManageTemplate
+export default SuperAmdinManageTemplate
