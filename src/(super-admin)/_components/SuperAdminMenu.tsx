@@ -48,7 +48,7 @@ export const SuperAdminMenuItems: SuperMenuItem[] = [
     {
         id:  "super-admin/dashboard/Settings" , 
         label : "Settings" ,
-        icon : <FiSettings />
+        icon : <FiSettings className="w-5 h-5" />
     }
     
   ];

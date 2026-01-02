@@ -5,6 +5,12 @@ import ClientAdminPlansAndPricing from "@/(client-admin)/pages/PlansPricing/Plan
 import ClientAdminSettings from "@/(client-admin)/pages/Settings/Settings";
 import ClientAdminSetupTemplate from "@/(client-admin)/pages/SetupTemplate/SetupTemplate";
 import ClientAdminUsersManagement from "@/(client-admin)/pages/UsersManagement/UsersManagement";
+// import ManageringLogs from "@/(manager-flow)/pages/ManageringLogs/ManageringLogs";
+import ManagerDoshboard from "@/(manager-flow)/pages/dashboard/Doshboard";
+import ManagerHuddles from "@/(manager-flow)/pages/Huddles/Huddles";
+import ManagerSessionsManagement from "@/(manager-flow)/pages/SessionsManagement/SessionsManagement";
+import ManagerSettings from "@/(manager-flow)/pages/Settings/Settings";
+import ManagerTeamManagement from "@/(manager-flow)/pages/TeamManagement/TeamManagement";
 import SuperAmdinAllPayments from "@/(super-admin)/pages/billing-management/pages/AllPayments/AllPayments";
 import SuperAmdinManageSubscriptions from "@/(super-admin)/pages/billing-management/pages/ManageSubscriptions/ManageSubscriptions";
 import SuperAmdinRevenueDashboard from "@/(super-admin)/pages/billing-management/pages/Revenue-Dashboard/RevenueDashboard";
@@ -13,8 +19,11 @@ import SuperAdminOverview from "@/(super-admin)/pages/overview/Overview";
 import SuperAmdinSetting from "@/(super-admin)/pages/settings/Setting";
 import ErrorPage from "@/components/shared/errorPage/ErrorPage";
 import ClientAdminLayout from "@/layout/ClientAdminLayout";
+// import ManagerLayout from "@/layout/ManagerLayout";
 import SuperAdminLayout from "@/layout/SuperAdminLayout";
 import { createBrowserRouter } from "react-router";
+import ManagerCoachingLogs from "@/(manager-flow)/pages/CoachingLogs/CoachingLogs";
+import ManagerLayout from "@/layout/ManagerLayout";
 
 const Routes = createBrowserRouter([
     {
@@ -81,6 +90,35 @@ const Routes = createBrowserRouter([
             }
         ]
     } ,
+    {
+        path: "Manager/dashboard" ,
+        element: <ManagerLayout /> ,
+        children : [
+            {
+                index: true ,
+                element : <ManagerDoshboard />
+            }, {
+                path : "Huddles" ,
+                element: <ManagerHuddles />
+            }, 
+            {
+                path: "Coaching-Logs" ,
+                element : <ManagerCoachingLogs />
+            },
+            {
+                path : "Team-Management" ,
+                element : <ManagerTeamManagement /> 
+            }, 
+            {
+                path: "Sessions-Management" ,
+                element : <ManagerSessionsManagement />
+            },
+            {
+                path : "Settings" ,
+                element: <ManagerSettings />
+            }
+        ]
+    },
     {
         path : "*" ,
         element: <ErrorPage />

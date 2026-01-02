@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router";
-import { SuperAdminMenuItems } from "./SuperAdminMenu";
+// import { ManagerMenuItems } from "./CoachMenu";
 import logo from "@/assets/superAdmin/E2Elogo.svg";
 // import { MdExitToApp } from "react-icons/md";
-import { IoExitOutline } from "react-icons/io5";
+// import { IoExitOutline } from "react-icons/io5";
 import { LuLogOut } from "react-icons/lu";
+import { ManagerMenuItems } from "./ManagerMenu";
+// import { ManagerMenuItems } from "./ManagerMenu";
 
-export function SuperAdminSidebar() {
+export function ManagerSidebar() {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(
     new Set(["dashboard"])
   );
@@ -32,7 +34,7 @@ export function SuperAdminSidebar() {
 
   /* ---------------- Helpers ---------------- */
   const findParentItem = (childId: string): string | null => {
-    for (const item of SuperAdminMenuItems) {
+    for (const item of ManagerMenuItems) {
       if (item.children?.some((c) => c.id === childId)) {
         return item.id;
       }
@@ -72,7 +74,7 @@ export function SuperAdminSidebar() {
 
   /* ---------------- Render Menu ---------------- */
   const renderMenuItems = (
-    items: typeof SuperAdminMenuItems,
+    items: typeof ManagerMenuItems,
     level = 0
   ) =>
     items.map((item) => {
@@ -164,7 +166,7 @@ export function SuperAdminSidebar() {
 
       <nav className="flex flex-col h-[80vh]">
         <div className="mt-6 space-y-1">
-            {renderMenuItems(SuperAdminMenuItems)}
+            {renderMenuItems(ManagerMenuItems)}
         </div>
 
         {/* Logout button at bottom */}

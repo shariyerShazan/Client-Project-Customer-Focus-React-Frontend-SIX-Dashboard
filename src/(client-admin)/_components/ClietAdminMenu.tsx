@@ -33,22 +33,22 @@ export const ClinetAdminMenuItems: ClientMenuItem[] = [
     {
         id:  "client-admin/dashboard/Users-Management" , 
         label : "Users Management" ,
-        icon : <FiUsers />
+        icon : <FiUsers className="w-5 h-5" />
     }, 
     {
        id:  "client-admin/dashboard/Invoice-Management" , 
         label : "Invoice Management" ,
-        icon : <GrNotes />
+        icon : <GrNotes className="w-5 h-5" />
     }, 
     {
        id:  "client-admin/dashboard/Plans-Pricing" , 
         label : "Plans & Pricing" ,
-        icon : <IoPricetagsOutline />
+        icon : <IoPricetagsOutline className="w-5 h-5" />
     }, 
     {
        id:  "client-admin/dashboard/Settings" , 
         label : "Settings" ,
-        icon : <FiSettings />
+        icon : <FiSettings className="w-5 h-5" />
     }
     
   ];
