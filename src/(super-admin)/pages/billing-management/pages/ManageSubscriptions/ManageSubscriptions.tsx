@@ -1,8 +1,8 @@
 
-const ManageSubscriptions = () => {
+const SuperAmdinManageSubscriptions = () => {
   return (
     <div>ManageSubscriptions</div>
   )
 }
 
-export default ManageSubscriptions
+export default SuperAmdinManageSubscriptions

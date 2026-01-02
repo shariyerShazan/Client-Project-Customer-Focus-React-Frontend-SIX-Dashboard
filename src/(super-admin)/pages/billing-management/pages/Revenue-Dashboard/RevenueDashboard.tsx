@@ -1,9 +1,9 @@
 
 
-const RevenueDashboard = () => {
+const SuperAmdinRevenueDashboard = () => {
   return (
     <div>RevenueDashboard</div>
   )
 }
 
-export default RevenueDashboard
+export default SuperAmdinRevenueDashboard
