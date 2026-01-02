@@ -185,7 +185,7 @@ export function FrontLineSidebar() {
       {/* 🔹 Mobile Floating Menu Button */}
       <button
         onClick={() => setIsSidebarOpen(true)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 rounded-md bg-white shadow-md hover:bg-slate-100"
+        className="lg:hidden fixed top-12 left-4 z-50 p-2 rounded-md bg-white shadow-md hover:bg-slate-100"
         aria-label="Open Menu"
       >
         <Menu className="w-5 h-5 text-slate-700 cursor-pointer" />

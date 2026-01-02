@@ -14,7 +14,7 @@ interface NavbarT {
 
 export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }) => {
   return (
-    <nav className="w-full bg-white border border-gray-200 rounded-[20px] px-6 py-4 shadow-sm flex justify-between items-center font-sans">
+    <nav className="w-full  bg-white border border-gray-200 rounded-[20px] px-6 py-4 shadow-sm flex justify-between items-center font-sans">
       
       {/* Left Side: Text Content */}
       <div className="flex flex-col">
@@ -51,8 +51,9 @@ export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }
         </div>
 
         {/* User Profile */}
-        <div className="flex items-center gap-3 border-l pl-6 border-gray-100">
-          <div className="relative">
+
+        <div className="flex   items-center gap-3 border-l pl-6 border-gray-100">
+          <div className="relative w-11 h-11">
             <img 
               src={user.profilePic} 
               alt={user.name} 
@@ -61,7 +62,7 @@ export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }
             {/* Online Status Green Dot */}
             <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
           </div>
-          
+                  <div className="hidden sm:block">
           <div className="flex flex-col">
             <span className="text-sm font-semibold text-gray-900 leading-none">
               {user.name}
@@ -70,6 +71,7 @@ export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }
               {user.role}
             </span>
           </div>
+        </div>
         </div>
 
       </div>
