@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from "react-router";
 import { SuperAdminMenuItems } from "./SuperAdminMenu";
 import logo from "@/assets/superAdmin/E2Elogo.svg";
 // import { MdExitToApp } from "react-icons/md";
-// import { IoExitOutline } from "react-icons/io5";
+import { IoExitOutline } from "react-icons/io5";
 import { LuLogOut } from "react-icons/lu";
 
 export function SuperAdminSidebar() {
