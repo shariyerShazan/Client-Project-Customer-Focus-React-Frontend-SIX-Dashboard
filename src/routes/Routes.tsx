@@ -24,6 +24,8 @@ import SuperAdminLayout from "@/layout/SuperAdminLayout";
 import { createBrowserRouter } from "react-router";
 import ManagerCoachingLogs from "@/(manager-flow)/pages/CoachingLogs/CoachingLogs";
 import ManagerLayout from "@/layout/ManagerLayout";
+import CoachLayout from "@/layout/CoachLayout";
+import CoachDashboard from "@/(coach-flow)/pages/Dashboard/Dashboard";
 
 const Routes = createBrowserRouter([
     {
@@ -116,6 +118,16 @@ const Routes = createBrowserRouter([
             {
                 path : "Settings" ,
                 element: <ManagerSettings />
+            }
+        ]
+    },
+    {
+        path: "coach/dashboard" ,
+        element: <CoachLayout /> ,
+        children: [
+            {
+                index: true ,
+                element : <CoachDashboard />
             }
         ]
     },
