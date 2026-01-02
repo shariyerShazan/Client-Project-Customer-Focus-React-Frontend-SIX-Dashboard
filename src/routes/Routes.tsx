@@ -37,6 +37,10 @@ import FrontLineMySessions from "@/(frontline-staf-flow)/pages/Myessions/MySessi
 import FrontLineMyHabits from "@/(frontline-staf-flow)/pages/MyHabits/MyHabits";
 import FrontLineHuddles from "@/(frontline-staf-flow)/pages/Huddles/Huddles";
 import FrontLineSettings from "@/(frontline-staf-flow)/pages/Settings/Settings";
+import ExecutiveDashboard from "@/(executive-flow)/pages/Dashboard/Dashboard";
+import ExecutiveLayout from "@/layout/ExecutiveLayout";
+import ExecutiveScorecard from "@/(executive-flow)/pages/Scorecard/Scorecard";
+import ExecutiveSettings from "@/(executive-flow)/pages/Settings/Settings";
 
 const Routes = createBrowserRouter([
     {
@@ -190,6 +194,24 @@ const Routes = createBrowserRouter([
             element: <FrontLineSettings />
         }
       ]
+    },
+    {
+        path: "Executive/Dashboard" ,
+        element: <ExecutiveLayout /> ,
+        children : [
+            {
+                index: true ,
+                element : <ExecutiveDashboard />
+            } , 
+            {
+                path: "Scorecard" ,
+                element: <ExecutiveScorecard />
+            }, 
+            {
+                path : "settings" ,
+                element: <ExecutiveSettings />
+            }
+        ]
     },
     {
         path : "*" ,
