@@ -1,5 +1,5 @@
 
-import { BiReceipt } from "react-icons/bi";
+// import { BiReceipt } from "react-icons/bi";
 import { FiSettings, FiUsers } from "react-icons/fi";
 // import { IoSettingsOutline } from "react-icons/io5";
 import {  LuLogs, LuNotepadText } from "react-icons/lu";

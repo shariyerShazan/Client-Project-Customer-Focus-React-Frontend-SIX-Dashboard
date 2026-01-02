@@ -26,6 +26,21 @@ import ManagerCoachingLogs from "@/(manager-flow)/pages/CoachingLogs/CoachingLog
 import ManagerLayout from "@/layout/ManagerLayout";
 import CoachLayout from "@/layout/CoachLayout";
 import CoachDashboard from "@/(coach-flow)/pages/Dashboard/Dashboard";
+import CoachSessionsManagement from "@/(coach-flow)/pages/SessionsManagement/SessionsManagement";
+import CoachCoachingLogs from "@/(coach-flow)/pages/CoachingLogs/CoachingLogs";
+import CoachAssignedTeamMembers from "@/(coach-flow)/pages/AssignedTeamMembers/AssignedTeamMembers";
+import CoachHuddles from "@/(coach-flow)/pages/Huddles/Huddles";
+import CoachSettings from "@/(coach-flow)/pages/Settings/Settings";
+import FrontLineLayout from "@/layout/FrontLineLayout";
+import FrontLineDashboard from "@/(frontline-staf-flow)/pages/Dashboard/Dashboard";
+import FrontLineMySessions from "@/(frontline-staf-flow)/pages/Myessions/MySessions";
+import FrontLineMyHabits from "@/(frontline-staf-flow)/pages/MyHabits/MyHabits";
+import FrontLineHuddles from "@/(frontline-staf-flow)/pages/Huddles/Huddles";
+import FrontLineSettings from "@/(frontline-staf-flow)/pages/Settings/Settings";
+import ExecutiveDashboard from "@/(executive-flow)/pages/Dashboard/Dashboard";
+import ExecutiveLayout from "@/layout/ExecutiveLayout";
+import ExecutiveScorecard from "@/(executive-flow)/pages/Scorecard/Scorecard";
+import ExecutiveSettings from "@/(executive-flow)/pages/Settings/Settings";
 
 const Routes = createBrowserRouter([
     {
@@ -128,6 +143,73 @@ const Routes = createBrowserRouter([
             {
                 index: true ,
                 element : <CoachDashboard />
+            }, 
+            {
+                path: "Sessions-Management" ,
+                element: <CoachSessionsManagement />
+            }, 
+            {
+                path : "Coaching-Logs" ,
+                element : <CoachCoachingLogs />
+            },
+            {
+                path: "Assigned-Team-Members" ,
+                element: <CoachAssignedTeamMembers />
+            }, 
+            {
+                path: "Huddles"  ,
+                element: <CoachHuddles />
+            }, {
+                path: "settings" ,
+                element : <CoachSettings />
+            }
+        ]
+    },
+    {
+      path: "frontLine/dashboard" ,
+      element : <FrontLineLayout /> , 
+      children : [
+        {
+            index : true , 
+            element: <FrontLineDashboard />
+        } ,
+        {
+            path : "My-Sessions" ,
+            element: <FrontLineMySessions />
+        },
+        {
+            path: "My-Habits" ,
+            element : <FrontLineMyHabits />
+        },
+        {
+            path : "My-Scorecard" ,
+            element : <FrontLineMySessions />
+        } ,
+        {
+            path : "Huddles" ,
+            element: <FrontLineHuddles />
+        }, 
+        {
+            path: "settings"  , 
+            element: <FrontLineSettings />
+        }
+      ]
+    },
+    {
+        path: "Executive/Dashboard" ,
+        element: <ExecutiveLayout /> ,
+        children : [
+            {
+                index: true ,
+                element : <ExecutiveDashboard />
+            } , 
+            {
+                path: "Scorecard" ,
+                element: <ExecutiveScorecard />
+            }, 
+            {
+                path : "settings" ,
+                element: <ExecutiveSettings />
             }
         ]
     },
