@@ -9,7 +9,7 @@ const FrontLineLayout = () => {
     <div className="flex min-h-screen bg-[#F8F9FA]">
         <FrontLineSidebar />
        <main className="flex-1 lg:ml-72 flex flex-col min-h-screen">
-        <div className="p-4 lg:p-6">
+        <div className="p-4 lg:p-6 ml-10 md:ml-0">
           <Navbar
             title={"Frontline Staff"}
             subtitle={"Complete your habits • practice roleplays • share feedback" }

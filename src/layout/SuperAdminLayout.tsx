@@ -11,7 +11,7 @@ const SuperAdminLayout = () => {
 
       <main className="flex-1 lg:ml-72 flex flex-col min-h-screen">
         
-        <div className="p-4 lg:p-6">
+        <div className="p-4 lg:p-6 ml-10 md:ml-0">
           <Navbar 
             title={"Super Admin Workspace"}
             subtitle={"Manage organizations, trainers, users, and system-wide operations." }
