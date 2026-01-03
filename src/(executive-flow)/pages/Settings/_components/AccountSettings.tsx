@@ -93,7 +93,7 @@ const AccountSettings = () => {
             <h3 className="font-bold text-slate-900">Change Password</h3>
             <p className="text-base text-slate-500">Choose a secure password. <span className="text-slate-400">Last changed: September 16, 2025</span></p>
           </div>
-          <Button variant="link" className="text-[#8C23CC] font-bold">Change</Button>
+          <Button variant="link" className="text-[#8C23CC] font-bold cursor-pointer">Change</Button>
         </div>
       </section>
     </div>
