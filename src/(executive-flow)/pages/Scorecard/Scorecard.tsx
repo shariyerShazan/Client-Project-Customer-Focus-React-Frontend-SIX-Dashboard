@@ -7,14 +7,13 @@ import { TopListCard } from "./_components/TopListCard";
 type BranchT = {
   branch : string ;
   email : string ;
-  createdAt: string ;
-  trend: "up" | "down" | "neutral",
+  trend: string
   adherence: string ;
-  status: string ;
+  status: number ;
   region: string
   manager: string
   csat: string
-  complaints: string
+  complaints: string;
 }
 
 const ExecutiveScorecard = () => {
