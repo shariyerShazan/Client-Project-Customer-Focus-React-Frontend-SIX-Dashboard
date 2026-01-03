@@ -131,7 +131,7 @@ const handleDelete = (tenant: Tenant) => {
               )
             );
           }}
-          className="data-[state=checked]:bg-[#8A2BE2] cursor-pointer"
+          className="data-[state=checked]:bg-[#8C23CC] cursor-pointer"
         />
       ),
     },
@@ -149,7 +149,7 @@ const handleDelete = (tenant: Tenant) => {
       render: (item) => (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
+            <Button variant="ghost" size="icon" className="h-8 w-8 cursor-pointer">
               <MoreVertical className="w-4 h-4 text-gray-400" />
             </Button>
           </DropdownMenuTrigger>
@@ -181,7 +181,7 @@ const handleDelete = (tenant: Tenant) => {
         <h1 className="text-2xl font-bold text-slate-900">Recent Tenants</h1>
             <Button 
                 onClick={handleAdd}
-                className="bg-[#8A2BE2] hover:bg-[#7A26C1] text-white rounded-lg py-5"
+                className="bg-[#8C23CC] hover:bg-[#7A26C1] text-white rounded-lg py-5 cursor-pointer"
               >
                 + Create New Tenant
           </Button>
@@ -199,19 +199,19 @@ const handleDelete = (tenant: Tenant) => {
                 setCurrentPage(1); // Reset to page 1 on search
               }}
               placeholder="Search by name, email, domain and plan"
-              className="w-full pl-10 pr-4 py-2.5 border rounded-lg text-sm outline-none focus:border-purple-500 transition-colors"
+              className="w-full pl-10 pr-4 py-2.5 border rounded-lg text-sm outline-none focus:border-[#8C23CC] transition-colors"
             />
           </div>
           <div className="flex gap-3">
             <Button
               variant="outline"
-              className="text-slate-600 border-slate-200"
+              className="text-slate-600 border-slate-200 cursor-pointer"
             >
               Filter
             </Button>
             <Button
               variant="outline"
-              className="text-slate-600 border-slate-200"
+              className="text-slate-600 border-slate-200 cursor-pointer"
             >
               Export
             </Button>
