@@ -11,8 +11,8 @@ const CoachLayout = () => {
         <div className="p-4 ">
            <div className='ml-10 md:ml-0'>
             <Navbar
-            title={"Executive"}
-            subtitle={"Here's your service excellence overview for today" }
+            title={"Trainer Workspace"}
+            subtitle={"You can manage sessions, materials and score roleplays here." }
             notificationCount={2}
             user={{
               name: "Esther Howard",
