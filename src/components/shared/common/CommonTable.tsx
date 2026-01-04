@@ -22,7 +22,7 @@ interface CommonTableProps<T> {
 
 const CommonTable = <T,>({ columns, data }: CommonTableProps<T>) => {
   return (
-    <div className="rounded-xl  overflow-hidden">
+    <div className="rounded-md  overflow-hidden">
       <Table>
         <TableHeader className="bg-slate-50/50">
           <TableRow>
