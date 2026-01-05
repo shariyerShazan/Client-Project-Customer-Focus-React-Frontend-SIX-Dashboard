@@ -14,7 +14,8 @@ interface NavbarT {
 
 export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }) => {
   return (
-    <nav className="w-full  bg-white border border-gray-200 rounded-[20px] px-6 py-3 shadow-sm flex justify-between items-center font-sans">
+   <div className="w-full">
+        <nav className=" sticky   bg-white border border-gray-200 rounded-[20px] px-6 py-3 shadow-sm flex justify-between items-center font-sans">
       
       {/* Left Side: Text Content */}
       <div className="flex flex-col">
@@ -76,5 +77,6 @@ export const Navbar: FC<NavbarT> = ({ title, subtitle, notificationCount, user }
 
       </div>
     </nav>
+   </div>
   );
 };
