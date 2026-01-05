@@ -50,7 +50,7 @@ const SuperAdminManageTemplate = () => {
       t.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [data, searchQuery]);
-
+// 
   const columns: Column<Template>[] = [
     {
       header: "Template Name",
